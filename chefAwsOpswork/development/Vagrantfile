@@ -1,0 +1,14 @@
+VAGRANTFILE_API_VERSION = "2"
+
+Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
+  config.vm.box = "ubuntu/trusty64"
+  config.vm.network "forwarded_port", guest: 3000, host: 3000
+  config.berkshelf.enabled = true;
+  config.vm.provision :chef_solo do |chef|
+    chef.cookbooks_path = "./"
+    chef.roles_path = "roles"
+    chef.environments_path = "environments"
+    chef.environment = "development"
+    chef.add_role("nodejs_role")
+  end
+end

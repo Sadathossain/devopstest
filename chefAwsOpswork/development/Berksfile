@@ -1,0 +1,4 @@
+cookbook 'ark'
+cookbook 'git'
+cookbook 'apt', git: 'git://github.com/opscode-cookbooks/apt.git'
+cookbook 'vagrant-node-simple', git: 'git://github.com/christopher5106/vagrant-node-simple.git'
