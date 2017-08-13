@@ -22,7 +22,7 @@ $ cd chef
 [Deploy hello-world to kubernetes with mongodb](https://github.com/Sadathossain/devopstest/tree/master/k8s)
 
 ```sh
-$ cd chef
+$ cd k8s
 ```
 
 ---
