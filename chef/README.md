@@ -14,7 +14,6 @@ Deploy hello-world to vagrant with chef-solo
 
 Add PRIVATE KEY to [default.rb](https://github.com/Sadathossain/devopstest/blob/master/chef/cookbooks/helloworldexpress/recipes/default.rb)
 
-
 ```sh
 $ vagrant up
 ```
