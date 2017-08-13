@@ -6,7 +6,7 @@ Deploy hello-world to kubernetes with mongodb
 
 ## Requirements
 
-* k8s >=1.6.0
+* k8s >= 1.6.0
 
 ---
 

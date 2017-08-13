@@ -7,7 +7,7 @@ This is my solution repo for devops test.
 ## Requirements
 
 * vagrant >= 1.9.5
-* k8s >=1.6.0
+* k8s >= 1.6.0
 
 ---
 
