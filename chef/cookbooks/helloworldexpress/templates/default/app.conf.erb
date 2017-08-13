@@ -1,0 +1,15 @@
+### /templates/default/app.conf.erb
+description "Upstart Job for the App service"
+
+start on (local-filesystems and net-device-up IFACE!=lo)
+stop on shutdown
+
+setuid root
+chdir /opt/app
+
+env NODE_ENV=production
+env PORT=8080
+
+respawn
+
+exec npm start
